@@ -8,7 +8,7 @@ const Login = ({ providers }) => {
   return (
     <div className='flex flex-col items-center justify-center w-full min-h-screen bg-black space-y-5'>
       <div className='relative w-52 h-52 mb-5 animate-bounce'>
-        <Image src='/spotify.png' alt='spotify-logo' layout='fill' objectFit='cover' />
+        <Image src='/spotify.png' alt='spotify-logo' layout='fill' objectFit='cover' priority />
       </div>
 
       {Object.values(providers).map(provider => (
