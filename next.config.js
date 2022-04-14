@@ -5,7 +5,13 @@
 
 const nextConfig = {
   images: {
-    domains: ['localhost:3001', 'platform-lookaside.fbsbx.com', 'i.scdn.co', 'mosaic.scdn.co'],
+    domains: [
+      'localhost:3000',
+      'papa-spotify-clone',
+      'platform-lookaside.fbsbx.com',
+      'i.scdn.co',
+      'mosaic.scdn.co',
+    ],
   },
 };
 
