@@ -1,16 +1,29 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+/** @format */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply p-0 m-0 font-Poppins;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer components {
+  .sidebar-button {
+    @apply flex items-center space-x-2 transition-all duration-200 hover:text-white;
+  }
 
-* {
-  box-sizing: border-box;
+  .player-button {
+    @apply h-7 w-7 cursor-pointer text-gray-400 hover:text-white hover:scale-125 transition-all transform duration-100 ease-out;
+  }
 }

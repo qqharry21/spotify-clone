@@ -1,6 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+/**
+ * @format
+ * @type {import('next').NextConfig}
+ */
 
-module.exports = nextConfig
+const nextConfig = {
+  images: {
+    domains: ['localhost:3001', 'platform-lookaside.fbsbx.com', 'i.scdn.co', 'mosaic.scdn.co'],
+  },
+};
+
+module.exports = nextConfig;
